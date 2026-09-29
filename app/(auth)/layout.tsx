@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
-import { SmoothScroll } from "@/components/sections";
-import "./globals.css";
+import "@/app/styles/dashboard.globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,9 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Invoicely - Simple Invoicing for Freelancers & Businesses",
-  description:
-    "Create, send, and track professional invoices in seconds. Custom templates, automatic tax calculations, multi-currency support, and payment reminders.",
+  title: "Authentication - Invoicely",
+  description: "Sign in to access your Invoicely workspace.",
   icons: {
     icon: "/assets/favicon.png",
     shortcut: "/assets/favicon.png",
@@ -27,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -40,8 +38,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/assets/favicon.png" />
       </head>
-      <body className="bg-background font-sans text-on-background antialiased selection:bg-brand selection:text-foreground">
-        <SmoothScroll />
+      <body className="bg-background font-sans text-on-background antialiased selection:bg-brand selection:text-foreground min-h-screen flex items-center justify-center p-4">
         {children}
       </body>
     </html>
