@@ -9,7 +9,7 @@ import {
   PricingSection,
   TemplatesSection,
   TestimonialsSection,
-} from "@/components/sections";
+} from "@/app/(main)/_components/sections";
 
 export default function Home() {
   return (

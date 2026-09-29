@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
-import { SmoothScroll } from "@/components/sections";
 import "@/app/styles/main-globals.css";
+import { SmoothScroll } from "./_components/sections";
 
 const inter = Inter({
   subsets: ["latin"],
