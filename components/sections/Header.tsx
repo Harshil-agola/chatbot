@@ -56,7 +56,7 @@ export default function Header() {
             : "bg-transparent border-b border-transparent"
         }`}
       >
-        <div className="relative h-16 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
+        <div className="relative h-16 w-full max-w-360 mx-auto px-4 lg:px-12 flex items-center justify-between">
           {/* Brand Logo */}
           <div className="flex items-center gap-4 z-10">
             <Link href="/" className="flex items-center gap-2 rounded-lg">
